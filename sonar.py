@@ -12,6 +12,8 @@ Change log:
             :                   Added self-healing subroutines; sonar phidget expects initial activity reading 
                                 for loop to continue
 
+# 20210116  :   @bencarpena :   Deployed to altair
+
 
 
 References:
