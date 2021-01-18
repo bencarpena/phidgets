@@ -8,9 +8,10 @@ Sonar IoT
 Modified / Upgraded by : @bencarpena
 
 Change log:
-# 20210115  :   Initial setup
-            :   Added self-healing subroutines; sonar phidget expects initial activity reading 
-                for loop to continue
+# 20210115  :   @bencarpena :   Initial setup
+            :                   Added self-healing subroutines; sonar phidget expects initial activity reading 
+                                for loop to continue
+
 
 
 References:
@@ -44,7 +45,7 @@ def Activate_Sonar():
 try:
    Activate_Sonar()
 except:
-    print("INFO: Error encountered at Sonar sensor. Missing data. Healing now...")
+    print("INFO: Error encountered at Sonar sensor (DST1200_0). Missing data. Healing now...")
     pass
 
 finally:
