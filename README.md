@@ -8,7 +8,7 @@
 
 ![Phidgets + Dev](https://github.com/bencarpena/phidgets/blob/main/_stage/20210115_141331.jpg)
 ![Phidgets + Raspi Zero](https://github.com/bencarpena/phidgets/blob/main/_stage/20210116_153324.jpg)
-
+![Thonny](https://github.com/bencarpena/phidgets/blob/main/thonny-phidget.png)
 
 
 
