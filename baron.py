@@ -7,10 +7,10 @@ Baron IoT
 
 Modified / Upgraded by : @bencarpena
 
-Change log:
-# 20210117  :   @bencarpena :   Initial setup
-            :                   Added self-healing subroutines
-
+# Change log:
+@bencarpena :   20210117    :   Initial setup
+                            :   Added self-healing subroutines
+            :   20210201    :   Reviewed error trapping; removed `pass`
 
 
 References:
