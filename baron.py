@@ -9,7 +9,7 @@ Modified / Upgraded by : @bencarpena
 
 Change log:
 # 20210117  :   @bencarpena :   Initial setup
-            :                   Added self-healing subroutines; deployed to altair
+            :                   Added self-healing subroutines
 
 
 
@@ -47,9 +47,17 @@ try:
    Activate_Baron()
 except:
     print("INFO: Error encountered at Temp & Humidity sensor (HUM1000_0). Healing now...")
-    pass
 
+    #err = sys.exc_info()[0] ##--> <class 'Phidget22.PhidgetException.PhidgetException'>
+    #print (err)
+    #raise err
+    
 finally:
-    #os.execv(__file__, sys.argv)
+    # === Self-healing ===
+    #v1: 
+    # os.execv(__file__, sys.argv)
+
+    #v2:
     os.execv(sys.executable, ['python3'] + [sys.argv[0]])
+
   
