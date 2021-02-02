@@ -50,14 +50,16 @@ except:
 
     #err = sys.exc_info()[0] ##--> <class 'Phidget22.PhidgetException.PhidgetException'>
     #print (err)
-    #raise err
+
     
-finally:
-    # === Self-healing ===
+    # === self-healing protocol; start from top ===
     #v1: 
     # os.execv(__file__, sys.argv)
-
     #v2:
     os.execv(sys.executable, ['python3'] + [sys.argv[0]])
+
+finally:
+    pass
+
 
   

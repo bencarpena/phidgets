@@ -12,8 +12,6 @@ Change log:
             :                   Added self-healing subroutines; sonar phidget expects initial activity reading 
                                 for loop to continue
 
-# 20210116  :   @bencarpena :   Deployed to altair
-
 
 
 References:
@@ -48,8 +46,11 @@ try:
    Activate_Sonar()
 except:
     print("INFO: Error encountered at Sonar sensor (DST1200_0). Missing data. Healing now...")
-    pass
+
+    # === self-healing protocol; start from top ===
+    os.execv(sys.executable, ['python3'] + [sys.argv[0]])
 
 finally:
+    pass
     #os.execv(__file__, sys.argv)
-    os.execv(sys.executable, ['python3'] + [sys.argv[0]])
+    
