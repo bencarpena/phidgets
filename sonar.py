@@ -7,10 +7,12 @@ Sonar IoT
 
 Modified / Upgraded by : @bencarpena
 
-Change log:
-# 20210115  :   @bencarpena :   Initial setup
-            :                   Added self-healing subroutines; sonar phidget expects initial activity reading 
-                                for loop to continue
+# Change log:
+@bencarpena :   20210115    :   Initial setup
+                            :   Added self-healing subroutines
+            :   20210202    :   Added flush buffered data
+
+            
 
 
 
@@ -48,6 +50,7 @@ except:
     print("INFO: Error encountered at Sonar sensor (DST1200_0). Missing data. Healing now...")
 
     # === self-healing protocol; start from top ===
+    sys.stdout.flush() # flush buffered data
     os.execv(sys.executable, ['python3'] + [sys.argv[0]])
 
 finally:

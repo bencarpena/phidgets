@@ -11,6 +11,7 @@ Modified / Upgraded by : @bencarpena
 @bencarpena :   20210117    :   Initial setup
                             :   Added self-healing subroutines
             :   20210201    :   Reviewed error trapping; removed `pass`
+            :   20210202    :   Added flush buffered data
 
 
 References:
@@ -56,6 +57,7 @@ except:
     #v1: 
     # os.execv(__file__, sys.argv)
     #v2:
+    sys.stdout.flush() # flush buffered data
     os.execv(sys.executable, ['python3'] + [sys.argv[0]])
 
 finally:
