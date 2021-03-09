@@ -1,6 +1,6 @@
 # phidgets
 
-- UPDATE:
+>- UPDATE:
 >- My Phidgets implementation is now field deployed and integrated with Slack and Raspi Zero
 - Starter kit : https://www.phidgets.com/start
 - Codes: Python3 (I just love it!)
